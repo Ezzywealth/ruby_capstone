@@ -5,6 +5,8 @@ require_relative 'Switches/switch_last_four'
 class App
   def initialize(lists_of_options)
     @lists_of_options = lists_of_options
+    @books = []
+    @labels = []
   end
 
   def run

@@ -1,3 +1,6 @@
 def switch_next_four(choice)
-  puts "You chose from the next 4: Number #{choice}"
+  case choice
+  when 6
+    list_all_labels(@labels)
+  end
 end
