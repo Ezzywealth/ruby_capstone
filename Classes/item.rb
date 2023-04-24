@@ -4,7 +4,6 @@ require 'time'
 require_relative './genre'
 require_relative './label'
 
-
 class Item
   attr_accessor :id, :publish_date, :archived, :genre, :author, :source, :label, :generated_id
 
