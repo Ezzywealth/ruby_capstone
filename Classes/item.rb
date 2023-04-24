@@ -1,4 +1,4 @@
-require 'date'
+require 'time'
 require_relative './genre.rb'
 require_relative './source.rb'
 require_relative './label.rb'
@@ -7,8 +7,8 @@ require_relative './author.rb'
 class Item
   attr_accessor :id, :publish_date, :archived, :genre, :author, :source, :label, :generated_id
 
-  def initialize(id, genre,author_first_name, author_last_name, source,label_title,label_color)
-    @publish_date = Date.today
+  def initialize(id, genre,author_first_name, author_last_name, source,label_title,label_color,published_date)
+    @published_date = published_date
     @archived = true
     @generated_id = []
     @id = id || generate_unique_number
@@ -20,9 +20,9 @@ class Item
   end
 
   def can_be_archived?
-    return true unless @publish_date <= 10
-
-    false
+    date = Time.parse(@published_date)
+    return true if ((Time.now - date) / 60 / 60 / 24 / 365).to_i > 10
+    return false
   end
 
   def move_to_archive

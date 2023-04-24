@@ -1,10 +1,10 @@
-require_relative '../Listing/list_books.rb'
+# Purpose: To demonstrate the use of a switch statement
 
 def switch_first_four(choice)
-  puts "you chose from the first 4: Number #{choice}"
+
   case choice
   when 1
-    list_all_books(@books)
+    puts 'you chose 1'
   when 2
     puts 'you chose 2'
   when 3
