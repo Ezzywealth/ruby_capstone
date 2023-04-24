@@ -1,13 +1,22 @@
 require 'date'
+require_relative './genre.rb'
+require_relative './source.rb'
+require_relative './label.rb'
+require_relative './author.rb'
 
 class Item
-  attr_accessor :id, :publish_date, :archived, :genre, :author, :source, :label, :generated_id,
+  attr_accessor :id, :publish_date, :archived, :genre, :author, :source, :label, :generated_id
 
-  def initialize(id, archived)
+  def initialize(id, genre,author_first_name, author_last_name, source,label_title,label_color)
     @publish_date = Date.today
-    @archived = archived
+    @archived = true
     @generated_id = []
-    @id = generate_unique_number
+    @id = id || generate_unique_number
+    @genre = Genre.new(id,genre)
+    @source = source
+    @label = Label.new(id, label_title, label_color)
+    @author = "#{author_first_name} #{author_last_name}"
+
   end
 
   def can_be_archived?
