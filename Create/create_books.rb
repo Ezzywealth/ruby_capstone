@@ -1,4 +1,4 @@
-require_relative 'book'
+require_relative '../Classes/book'
 
 def create_book
   print 'Enter book genre:  '
@@ -15,9 +15,12 @@ def create_book
   print 'Enter book label:  '
   label = gets.chomp
 
-  book = Book.new(title, author)
+  print 'Enter book cover state:  '
+  cover_state = gets.chomp
 
-  @books << book
+  # book = Book.new(title, author)
+
+  # @books << book
 
   puts "Book created: #{book.title} by #{book.author}"
 end

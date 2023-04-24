@@ -1,10 +1,13 @@
-class Item
-  attr_accessor :id, :publish_date, :archived, :genre, :author, :source, :label
+require 'date'
 
-  def initialize(id, publish_date, archived)
-    @id = id
-    @publish_date = publish_date
+class Item
+  attr_accessor :id, :publish_date, :archived, :genre, :author, :source, :label, :generated_id,
+
+  def initialize(id, archived)
+    @publish_date = Date.today
     @archived = archived
+    @generated_id = []
+    @id = generate_unique_number
   end
 
   def can_be_archived?
@@ -19,5 +22,12 @@ class Item
 
   def add_label(label)
     @label = label
+  end
+
+  def generate_unique_number
+    number = rand(1..1000)
+    number = rand(1..1000) while @generated_id.include?(number)
+    @generated_id << number
+    number
   end
 end

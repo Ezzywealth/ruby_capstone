@@ -1,3 +1,8 @@
+require_relative '../Create/create_books'
+
 def switch_last_four(choice)
-  puts "you chose from the last 4: Number #{choice}"
+  case choice
+  when 9
+    create_book
+  end
 end
