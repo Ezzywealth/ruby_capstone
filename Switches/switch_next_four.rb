@@ -1,5 +1,3 @@
-
-
 def switch_next_four(choice)
   case choice
   when 5

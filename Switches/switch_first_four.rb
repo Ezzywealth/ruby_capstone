@@ -1,7 +1,6 @@
 # Purpose: To demonstrate the use of a switch statement
 
 def switch_first_four(choice)
-
   case choice
   when 1
     puts 'you chose 1'

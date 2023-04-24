@@ -12,7 +12,6 @@ class App
     @genres = []
   end
 
-
   def run
     @welcome.welcome
 
@@ -21,7 +20,7 @@ class App
     end
 
     loop do
-    choice = gets.chomp.to_i
+      choice = gets.chomp.to_i
       case choice
       when 1, 2, 3, 4
         switch_first_four(choice)

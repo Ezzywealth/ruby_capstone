@@ -4,12 +4,14 @@ require_relative '../Classes/book'
 # id,genre,author_first_name, author_last_name, source,label_title,label_color,cover_state, publisher
 describe Book do
   before(:each) do
-    @book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'bad', 'Allen & Unwin', '2010-10-12')
+    @book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'bad',
+                     'Allen & Unwin', '2010-10-12')
   end
 
   context 'when creating a new book' do
     it 'should create a new book' do
-      book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'bad', 'Allen & Unwin', '2010-10-12')
+      book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'bad',
+                      'Allen & Unwin', '2010-10-12')
       expect(book.label.title).to eq('The Hobbit')
     end
 
@@ -28,9 +30,9 @@ describe Book do
     end
 
     it 'should return false if the publish year is less than 10 years ago' do
-      book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'good', 'Allen & Unwin', '2020-10-12')
+      book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'good',
+                      'Allen & Unwin', '2020-10-12')
       expect(book.can_be_archived?).to eq(false)
     end
   end
-
 end

@@ -3,7 +3,7 @@
 def switch_last_four(choice)
   case choice
   when 9
-   puts 'you chose 9'
+    puts 'you chose 9'
   when 10
     puts 'you chose 10'
   when 11
