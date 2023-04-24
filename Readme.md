@@ -1,61 +1,67 @@
 <a name="readme-top"></a>
 
-<a name="readme-top"></a>
-
 <div align="center">
 
-  <img src="readme-assets/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>OOP-School</b></h3>
+  <h3><b>School Library</b></h3>
 
 </div>
 
+<!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
 
-## 📑 Table of Contents
-
-- [📊 OOP-School ](#-OOP-School-)
+- [📗 Table of Contents](#-table-of-contents)
   - [🛠 Built With ](#-built-with-)
-    - [🧰 Tech Stack ](#-tech-stack-)
-    - [💎 Key Features ](#-key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
     - [Usage](#usage)
-    - [Deployment](#deployment)
-  - [📧 Contact ](#-contact-)
+  - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
-  - [💖 Show your support ](#-show-your-support-)
+  - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📊 OOP-School <a name="about-project"></a>
+# School Library <a name="about-project"></a>
 
-A OOP-School with Ruby
+**School Library** is a project that helps a university librarian to record what books are in the library and who borrows them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### 🧰 Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack"></a>
 
-- Ruby
+<details>
+<summary>Front-End</summary>
+  <ul>
+    <li><a href="https://ruby-doc.org/3.2.1/">Ruby</a></li>
+  </ul>
+</details>
 
-<!-- Features -->
+### Key Features <a name="key-features"></a>
 
-### 💎 Key Features <a name="key-features"></a>
-
-- Generate a comprehensive Folder Structure for Ruby App 💻
-- Understand the concept of setting up a project with bundle and gem 📈
-- Development Tools : Ruby and rbenv 🔗
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
+- **Person Class**
+- **Student Class**
+- **Teacher Class**
+- **Nameable Class**
+- **Person class to Nameable**
+- **Base Decorator**
+- **CapitalizeDecorator and TrimmerDecorator**
+- **Classroom Class**
+- **Has Many relationship between classroom and student**
+- **Class Rental**
+- **Class Book**
+- **List all books**
+- **List all people**
+- **Create a person (teacher or student, not a plain Person).**
+- **Create a book**
+- **Create a rental**
+- **List all rentals for a given person id**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,45 +73,38 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need [Node.js](https://nodejs.org/en/) installed on your machine.
+In order to run this project you need:
+
+- Code Editor (VS Studio)
+- Node.js
+- Ruby
 
 ### Setup
 
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/roniy68/oop-school
-  cd oop-school
-```
-
-### Install
-
-Install the dependencies with:
-
-```sh
-  bundle install
+  git clone git@github.com:Ezzywealth/school_library.git
 ```
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, navigate to the correct directory path and execute the `Ruby Filename` command on your terminal.
 
-```sh
-  ruby main.rb
-```
+- cd school_library
+- ruby main.rb
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 📧 Contact <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-I am always looking for ways to improve my project. If you have any suggestions or ideas, I would love to hear from you.
+👤 **Ezekiel Udiomuno**
 
-[![Github](https://img.shields.io/badge/GitHub-673AB7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/roniy68)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ahroniy)
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahroniy)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmed.hasan.rony@gmail.com)
+- GitHub: [@Ezzywealth](https://github.com/Ezzywealth)
+- Twitter: [@EzzyWealth](https://twitter.com/EzzyWealth)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ezekiel-udiomnuno)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,32 +112,27 @@ I am always looking for ways to improve my project. If you have any suggestions 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] **Gem Bundle**
-- [ ] **Visualize contribution**
+- **Better UI Experience**
+
+- **More Efficient Operations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
-## 📧 Authors <a name="authors"></a>
-
-👤 **Ahmed Hasan Rony**
-
-- **_[Ahmed Hasan Rony](https://github.com/roniy68)_**
-
 ## 🤝 Contributing <a name="contributing"></a>
 
-I welcome any and all contributions to my website! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request.
+Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](../../issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
-## 💖 Show your support <a name="support"></a>
+## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please consider giving it a ⭐.
+If you like this project then please do follow me and give a star to this repo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,9 +140,21 @@ If you like this project, please consider giving it a ⭐.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This project was inspired by:
+Thanks to Microverse for giving me the opportunity to embark on this project. I would also like to thank everyone who supported me in making this project a reality.
 
-- [GitHub Finder](https://github.com/JasurbekIsokov/github-finder)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+- **Can I use your code for my project?**
+
+  - Alright, you can get understanding from my code. I strongly recommend you to write your own code. It will give you better understanding. Thanks!
+
+- **Will you help me to solve my problem in my code?**
+
+  - Yes, It will be my pleasure to help you to solve your problem in your code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,6 +162,6 @@ This project was inspired by:
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./readme-assets/MIT.md) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
