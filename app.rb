@@ -8,10 +8,9 @@ class App
   end
 
   def run
+    puts 'Welcome to your media library!'
 
-    puts "Welcome to your media library!"
-
-    puts "Please choose from the following options:"
+    puts 'Please choose from the following options:'
 
     @lists_of_options.each_with_index do |option, index|
       puts "#{index + 1}. #{option}"
@@ -20,11 +19,11 @@ class App
     choice = gets.chomp.to_i
 
     case choice
-    when 1,2,3,4,5
+    when 1, 2, 3, 4, 5
       switch_first_five(choice)
-    when 6,7,8,9
+    when 6, 7, 8, 9
       switch_next_four(choice)
-    when 10,11,12,13
+    when 10, 11, 12, 13
       switch_last_four(choice)
     end
   end
