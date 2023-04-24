@@ -1,5 +1,6 @@
 # rubocop:disable Metrics/ParameterLists
-# rubocop:disable Metrics/LineLength
+# rubocop:disable Layout/LineLength
+
 require_relative 'item'
 class Book < Item
   attr_accessor :cover_state, :publisher, :published_date
@@ -19,4 +20,4 @@ class Book < Item
   end
 end
 # rubocop:enable Metrics/ParameterLists
-# rubocop:enable Metrics/LineLength
+# rubocop:enable Layout/LineLength
