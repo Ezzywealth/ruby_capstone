@@ -4,6 +4,7 @@ class Genre < Item
   attr_reader :id, :name, :items
 
   def initialize(id, name, items = [])
+    super()
     @id = id
     @name = name
     @items = items
