@@ -13,3 +13,12 @@ CREATE TABLE book (
     publisher VARCHAR,
     cover_state VARCHAR,
 );
+
+
+CREATE TABLE labels (
+    id INTEGER PRIMARY,
+    title VARCHAR,
+    color VARCHAR,
+    item_id INTEGER,
+    FOREIGN KEY (item_id) REFERENCES item(id)
+)
