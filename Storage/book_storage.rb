@@ -1,6 +1,6 @@
 require 'json'
 require_relative './storage'
-require_relative '../Classes/book.rb'
+require_relative '../Classes/book'
 
 
 class BookStorage < Storage
@@ -43,7 +43,8 @@ class BookStorage < Storage
   def self.deserialize(books)
     temp = []
     books.each do |book|
-      new_book = Book.new(book['id'],book['genre'],book['author'],book['source'],book['label'],book['cover_state'],book['publisher'],book['published_date'])
+      new_book = Book.new(book['id'], book['genre'], book['author'], book['source'], book['label'], book['cover_state'],
+                          book['publisher'], book['published_date'])
       temp.push(new_book)
     end
     temp

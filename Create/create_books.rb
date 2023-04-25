@@ -14,10 +14,10 @@ class CreateBook < Create
     author_last_name = gets.chomp
     author = "#{author_first_name} #{author_last_name}"
     print 'Enter book label title:  '
-    create_class(genre_name, author,books,labels,genres)
+    create_class(genre_name, author, books, labels, genres)
   end
 
-  def create_class(genre_name, author, books,labels,genres)
+  def create_class(genre_name, author, books, labels, genres)
     print 'Enter book source:  '
     source = gets.chomp
     label_title = gets.chomp

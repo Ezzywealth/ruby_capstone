@@ -2,7 +2,7 @@ require_relative 'Switches/switch_first_four'
 require_relative 'Switches/switch_next_four'
 require_relative 'Switches/switch_last_four'
 require_relative 'Classes/welcome'
-require_relative 'Storage/book_storage.rb'
+require_relative 'Storage/book_storage'
 
 class App
   def initialize(lists_of_options)
