@@ -2,7 +2,6 @@ require 'json'
 require_relative './storage'
 require_relative '../Classes/book'
 
-
 class BookStorage < Storage
   @books = []
 
