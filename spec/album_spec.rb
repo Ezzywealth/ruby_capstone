@@ -10,8 +10,6 @@ describe MusicAlbum do
   let(:genre) do
     Genre.new(nil, 'Fantasy')
   end
-  # id, genre, author, source, label, published_date,
-  #  on_spotify
   describe '#initialize' do
     it 'should set the id, publish_date, archived, and on_spotify attributes' do
       album = MusicAlbum.new(1, genre, 'J.R.R', 'The Hobbit', label,

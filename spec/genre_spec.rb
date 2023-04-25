@@ -1,7 +1,14 @@
 require_relative '../Classes/genre'
 require_relative '../Classes/album'
+require_relative '../Classes/label'
 
 describe Genre do
+  let(:label) do
+    Label.new(nil, 'Mavins', 'Red')
+  end
+  let(:genre) do
+    Genre.new(nil, 'Fantasy')
+  end
   describe '#initialize' do
     it 'should set the id and name attributes' do
       genre = Genre.new(1, 'Action')
@@ -24,8 +31,8 @@ describe Genre do
 
   describe '#add_items' do
     before(:each) do
-      @music_album = MusicAlbum.new(1, 'Fantasy', 'J.R.R.', 'The Lord of the Rings', 'The Hobbit', 'red',
-                                    'Allen & Unwin', '2010-10-12', false)
+      @music_album = MusicAlbum.new(1, genre, 'J.R.R', 'The Hobbit', label,
+                                    '2010-10-12', false)
     end
 
     let(:genre) do
