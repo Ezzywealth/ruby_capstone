@@ -1,18 +1,26 @@
 require 'rspec'
 require_relative '../Classes/book'
+require_relative '../Classes/label.rb'
+require_relative '../Classes/genre.rb'
 
-# id,genre,author_first_name, author_last_name, source,label_title,label_color,cover_state, publisher
 describe Book do
+  let(:label) do
+    Label.new(nil, 'Mavins', 'Red')
+  end
+  let(:genre) do
+    Genre.new(nil,'Fantasy')
+  end
+
   before(:each) do
-    @book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'bad',
+    @book = Book.new(nil, genre, 'J.R.R.', 'Tolkien', label, 'bad',
                      'Allen & Unwin', '2010-10-12')
   end
 
   context 'when creating a new book' do
     it 'should create a new book' do
-      book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'bad',
-                      'Allen & Unwin', '2010-10-12')
-      expect(book.label.title).to eq('The Hobbit')
+      book = Book.new(nil, genre, 'J.R.R.', 'Tolkien', label, 'bad',
+        'Allen & Unwin', '2010-10-12')
+      expect(book.label.title).to eq('Mavins')
     end
 
     it 'should create a new book with a genre of Fantasy' do
@@ -20,7 +28,7 @@ describe Book do
     end
 
     it 'should create a new book with a source of The Lord of the Rings' do
-      expect(@book.source).to eq('The Lord of the Rings')
+      expect(@book.source).to eq('Tolkien')
     end
   end
 
@@ -30,7 +38,7 @@ describe Book do
     end
 
     it 'should return false if the publish year is less than 10 years ago' do
-      book = Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'good',
+      book = Book.new(nil, genre, 'J.R.R.', 'Tolkien', label, 'good',
                       'Allen & Unwin', '2020-10-12')
       expect(book.can_be_archived?).to eq(false)
     end
