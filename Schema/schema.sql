@@ -1,14 +1,15 @@
 CREATE TABLE item (
     id INTEGER PRIMARY KEY,
-    source VARCHAR(255),
-    label VARCHAR(255),
+    source_id INTEGER,
+    label_id INTEGER,
     genre_id INTEGER,
-    author_id INTEGER
+    author_id INTEGER,
+    published_date INTEGER,
+    archived BOOLEAN,
 );
 
 CREATE TABLE book (
-    id INTEGER PRIMARY KEY,
-    item_id INTEGER,
-    ISBN VARCHAR(255),
-    FOREIGN KEY (item_id) REFERENCES item(id)
+    id INTEGER PRIMARY KEY REFERENCES item(id),
+    publisher VARCHAR,
+    cover_state VARCHAR,
 );
