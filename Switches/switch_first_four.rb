@@ -1,7 +1,6 @@
 require_relative '../Listing/list_books'
 require_relative '../Listing/list_album'
 
-
 def switch_first_four(choice)
   case choice
   when '1'

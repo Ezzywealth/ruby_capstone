@@ -1,7 +1,6 @@
 require_relative '../Create/create_books'
 require_relative '../Create/create_album'
 
-
 def switch_last_four(choice)
   case choice
   when '9'

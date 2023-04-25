@@ -3,10 +3,9 @@ require_relative './create'
 require_relative '../app'
 require_relative '../Classes/genre'
 require_relative '../Classes/label'
+# rubocop:disable Metrics/ParameterLists
 
-
-
-class CreateAlbum < Create 
+class CreateAlbum < Create
   def create(albums, labels, genres)
     print 'Enter music album genre: '
     genre_name = gets.chomp
@@ -29,13 +28,11 @@ class CreateAlbum < Create
     label = Label.new(nil, label_title, label_color)
     genre = Genre.new(nil, genre_name)
     album = MusicAlbum.new(nil, genre, music_album_author, source, label, published_date,
-      on_spotify)
+                           on_spotify)
     albums.push(album)
     genres.push(genre)
     labels.push(label)
-    puts "Music album created succesfuly!"
+    puts 'Music album created succesfuly!'
   end
 end
-
-
-
+# rubocop:enable Metrics/ParameterLists

@@ -1,7 +1,6 @@
 require_relative '../Listing/list_labels'
 require_relative '../Listing/list_genres'
 
-
 def switch_next_four(choice)
   case choice
   when '5'
