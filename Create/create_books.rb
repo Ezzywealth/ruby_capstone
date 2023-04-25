@@ -13,9 +13,13 @@ class CreateBook < Create
     print 'Enter book author last name:  '
     author_last_name = gets.chomp
     author = "#{author_first_name} #{author_last_name}"
+    print 'Enter book label title:  '
+    create_class(genre_name, author,books,labels,genres)
+  end
+
+  def create_class(genre_name, author, books,labels,genres)
     print 'Enter book source:  '
     source = gets.chomp
-    print 'Enter book label title:  '
     label_title = gets.chomp
     print 'Enter book label color:  '
     label_color = gets.chomp
@@ -23,14 +27,14 @@ class CreateBook < Create
     cover_state = gets.chomp
     print 'Enter book publisher:  '
     publisher = gets.chomp
+    print "Enter published date 'yyyy/mm/date': "
+    published_date = gets.chomp
     label = Label.new(nil, label_title, label_color)
     genre = Genre.new(nil, genre_name)
-    book = Book.new(nil, genre, author, source, label, cover_state, publisher)
-    puts book.inspect
+    book = Book.new(nil, genre, author, source, label, cover_state, publisher, published_date)
     books.push(book)
     labels.push(book.label)
     genres.push(book.genre)
-
     puts "Book created: #{book.label.title} by #{book.author}"
   end
 end

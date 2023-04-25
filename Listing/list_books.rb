@@ -4,5 +4,3 @@ def list_all_books(books)
     puts "#{index + 1}. #{book.label.title} by #{book.author}"
   end
 end
-
-puts 'stya'

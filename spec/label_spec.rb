@@ -1,14 +1,13 @@
 require_relative '../Classes/label'
 require_relative '../Classes/book'
-require_relative '../Classes/genre.rb'
+require_relative '../Classes/genre'
 
 describe Label do
-
   let(:label) do
     Label.new(nil, 'Mavins', 'Red')
   end
   let(:genre) do
-    Genre.new(nil,'Fantasy')
+    Genre.new(nil, 'Fantasy')
   end
   let(:book1) do
     Book.new(nil, genre, 'J.R.R.', 'Tolkien', label, 'bad', 'Allen & Unwin',

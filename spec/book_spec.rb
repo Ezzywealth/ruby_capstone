@@ -1,14 +1,14 @@
 require 'rspec'
 require_relative '../Classes/book'
-require_relative '../Classes/label.rb'
-require_relative '../Classes/genre.rb'
+require_relative '../Classes/label'
+require_relative '../Classes/genre'
 
 describe Book do
   let(:label) do
     Label.new(nil, 'Mavins', 'Red')
   end
   let(:genre) do
-    Genre.new(nil,'Fantasy')
+    Genre.new(nil, 'Fantasy')
   end
 
   before(:each) do
@@ -19,7 +19,7 @@ describe Book do
   context 'when creating a new book' do
     it 'should create a new book' do
       book = Book.new(nil, genre, 'J.R.R.', 'Tolkien', label, 'bad',
-        'Allen & Unwin', '2010-10-12')
+                      'Allen & Unwin', '2010-10-12')
       expect(book.label.title).to eq('Mavins')
     end
 

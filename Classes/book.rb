@@ -1,5 +1,4 @@
 # rubocop:disable Metrics/ParameterLists
-# rubocop:disable Layout/LineLength
 
 require_relative 'item'
 class Book < Item
@@ -20,4 +19,3 @@ class Book < Item
   end
 end
 # rubocop:enable Metrics/ParameterLists
-# rubocop:enable Layout/LineLength

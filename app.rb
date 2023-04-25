@@ -28,7 +28,7 @@ class App
         switch_next_four(choice)
       when 9, 10, 11, 12
         switch_last_four(choice)
-      when 13, 'q', 'quit'
+      when 13
         break
       end
     end
