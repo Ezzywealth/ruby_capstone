@@ -1,14 +1,21 @@
 require_relative '../Classes/label'
 require_relative '../Classes/book'
+require_relative '../Classes/genre'
 
 describe Label do
+  let(:label) do
+    Label.new(nil, 'Mavins', 'Red')
+  end
+  let(:genre) do
+    Genre.new(nil, 'Fantasy')
+  end
   let(:book1) do
-    Book.new(1, 'Fantasy', 'J.R.R.', 'Tolkien', 'The Lord of the Rings', 'The Hobbit', 'red', 'bad', 'Allen & Unwin',
+    Book.new(nil, genre, 'J.R.R.', 'Tolkien', label, 'bad', 'Allen & Unwin',
              '2010-10-12')
   end
 
   let(:book2) do
-    Book.new(1, 'Comic', 'Donald', 'Trump', 'American Savage', 'Washington', 'blue', 'good', 'Barrack Obama',
+    Book.new(nil, genre, 'Donald Trump', 'American Savage', label, 'good', 'Barrack Obama',
              '2022-10-12')
   end
 
