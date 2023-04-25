@@ -33,8 +33,8 @@ class CreateBook < Create
     genre = Genre.new(nil, genre_name)
     book = Book.new(nil, genre, author, source, label, cover_state, publisher, published_date)
     books.push(book)
-    labels.push(book.label)
-    genres.push(book.genre)
+    labels.push(label)
+    genres.push(genre)
     puts "Book created: #{book.label.title} by #{book.author}"
   end
 end
