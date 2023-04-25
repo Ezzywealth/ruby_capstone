@@ -1,7 +1,7 @@
 CREATE TABLE item (
     id INTEGER PRIMARY KEY,
     source_id INTEGER,
-    label_id INTEGER,
+    label_id INTEGER REFERENCES label(id),
     genre_id INTEGER,
     author_id INTEGER,
     published_date INTEGER,
@@ -14,11 +14,8 @@ CREATE TABLE book (
     cover_state VARCHAR,
 );
 
-
 CREATE TABLE labels (
     id INTEGER PRIMARY,
     title VARCHAR,
     color VARCHAR,
-    item_id INTEGER,
-    FOREIGN KEY (item_id) REFERENCES item(id)
 )
