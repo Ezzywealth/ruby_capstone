@@ -1,21 +1,19 @@
 # rubocop:disable Metrics/ParameterLists
 
 require 'time'
-require_relative './genre'
-require_relative './label'
 
 class Item
   attr_accessor :id, :publish_date, :archived, :genre, :author, :source, :label, :generated_id
 
-  def initialize(id, genre, author_first_name, author_last_name, source, label_title, label_color, published_date)
+  def initialize(id, genre, author, source, label, published_date)
     @published_date = published_date
     @archived = true
     @generated_id = []
     @id = id || generate_unique_number
-    @genre = Genre.new(id, genre)
+    @genre = genre
     @source = source
-    @label = Label.new(id, label_title, label_color)
-    @author = "#{author_first_name} #{author_last_name}"
+    @label = label
+    @author = author
   end
 
   def can_be_archived?

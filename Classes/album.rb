@@ -3,9 +3,9 @@ require_relative './item'
 class MusicAlbum < Item
   attr_accessor :on_spotify
 
-  def initialize(id, genre, author_first_name, author_last_name, source, label_title, label_color, published_date,
+  def initialize(id, genre, author, source, label, published_date,
                  on_spotify)
-    super(id, genre, author_first_name, author_last_name, source, label_title, label_color, published_date)
+    super(id, genre, author, source, label, published_date)
     @on_spotify = on_spotify
   end
 
