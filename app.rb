@@ -15,6 +15,7 @@ class App
     @genres = GenreStorage.fetch || []
     @books = BookStorage.fetch || []
     @welcome = Welcome.new
+    @albums = []
   end
 
   def quit_app
