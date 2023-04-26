@@ -9,15 +9,15 @@ class CreateGame < Create
   def create(games, labels, genres, authors)
     print 'Enter game genre:  '
     genre_name = gets.chomp
+    print 'Enter game label title:  '
+    create_class(genre_name, games, labels, genres, authors)
+  end
+
+  def create_class(genre_name, games, labels, genres, authors)
     print 'Enter game author first name:  '
     author_first_name = gets.chomp
     print 'Enter game author last name:  '
     author_last_name = gets.chomp
-    print 'Enter game label title:  '
-    create_class(author_last_name, author_first_name, genre_name, games, labels, genres,authors)
-  end
-
-  def create_class(author_last_name, author_first_name, genre_name,games, labels, genres,authors)
     print 'Enter book source:  '
     source = gets.chomp
     label_title = gets.chomp

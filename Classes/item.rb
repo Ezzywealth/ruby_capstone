@@ -1,5 +1,3 @@
-# rubocop:disable Metrics/ParameterLists
-
 require 'time'
 
 class Item

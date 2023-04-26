@@ -3,7 +3,6 @@ require_relative './create'
 require_relative '../app'
 require_relative '../Classes/genre'
 require_relative '../Classes/label'
-# rubocop:disable Metrics/ParameterLists
 
 class CreateAlbum < Create
   def create(albums, labels, genres)
