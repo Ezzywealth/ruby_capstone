@@ -3,6 +3,7 @@ require_relative 'Switches/switch_next_four'
 require_relative 'Switches/switch_last_four'
 require_relative 'Classes/welcome'
 require_relative 'Storage/book_storage'
+require_relative 'Storage/game_storage'
 require_relative 'Storage/label_storage'
 require_relative 'Storage/genre_storage'
 
@@ -14,6 +15,7 @@ class App
     @labels = LabelStorage.fetch || []
     @genres = GenreStorage.fetch || []
     @books = BookStorage.fetch || []
+    @games = []
     @welcome = Welcome.new
     @albums = []
   end
@@ -22,6 +24,7 @@ class App
     LabelStorage.save(@labels)
     GenreStorage.save(@genres)
     BookStorage.save(@books)
+    GameStorage.save(@games)
     puts 'Thank you for using this app!'
   end
 

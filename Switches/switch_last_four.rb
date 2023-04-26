@@ -1,4 +1,5 @@
 require_relative '../Create/create_books'
+require_relative '../Create/create_games'
 require_relative '../Create/create_album'
 
 def switch_last_four(choice)
@@ -10,6 +11,6 @@ def switch_last_four(choice)
   when '11'
     puts 'you chose 11'
   when '12'
-    puts 'you chose 12'
+    CreateGame.new.create(@games)
   end
 end
