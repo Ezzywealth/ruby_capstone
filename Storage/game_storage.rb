@@ -58,9 +58,9 @@ class GameStorage < Storage
   def self.deserialize(games)
     temp = []
     games.each do |game|
-      genre = GenreStorage.fetch.find { |genr| genr.id == game['genre'] }
-      label = LabelStorage.fetch.find { |labe| labe.id == game['label'] }
-      autor = AuthorStorage.fetch.find { |author| author.id == game['author'] }
+      genre = GenreStorage.fetch.find { |genr| genr.id == game['genre']['id'] }
+      label = LabelStorage.fetch.find { |labe| labe.id == game['label']['id'] }
+      autor = AuthorStorage.fetch.find { |author| author.id == game['author']['id'] }
       new_game = Game.new(game['multiplayer'], game['last_played_at'], game['id'], genre, autor, game['source'], label,
                           game['published_date'])
       temp.push(new_game)
