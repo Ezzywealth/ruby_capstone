@@ -3,18 +3,21 @@ require_relative 'Switches/switch_next_four'
 require_relative 'Switches/switch_last_four'
 require_relative 'Classes/welcome'
 require_relative 'Storage/book_storage'
+require_relative 'Storage/game_storage'
 
 class App
   def initialize(lists_of_options)
     @lists_of_options = lists_of_options
     @books = BookStorage.fetch || []
     @labels = []
+    @games = []
     @welcome = Welcome.new
     @genres = []
   end
 
   def quit_app
     BookStorage.save(@books)
+    GameStorage.save(@games)
     puts 'Thank you for using this app!'
   end
 
