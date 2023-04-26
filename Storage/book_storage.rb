@@ -29,7 +29,7 @@ class BookStorage < Storage
 
   def self.serialize(book)
     {
-      author: book.author,
+      author: book.author.id,
       id: book.id,
       genre: book.genre.id,
       source: book.source,
@@ -46,9 +46,9 @@ class BookStorage < Storage
     books.each do |book|
       genre = GenreStorage.fetch.find { |genr| genr.id == book['genre'] }
       label = LabelStorage.fetch.find { |labe| labe.id == book['label'] }
-      # author = AuthorStorage.fetch.find { |auth| auth.id == book['author'] }
+      author = AuthorStorage.fetch.find { |auth| auth.id == book['author'] }
 
-      new_book = Book.new(book['id'], genre, book['author'], book['source'], label, book['cover_state'],
+      new_book = Book.new(book['id'], genre, author, book['source'], label, book['cover_state'],
                           book['publisher'], book['published_date'])
       temp.push(new_book)
     end

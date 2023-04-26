@@ -13,7 +13,7 @@ class GameStorage < Storage
   end
 
   def self.fetch
-    games = if File.exist?('./data/games.json')
+    games = if File.exist?('./data/games.json') && File.size('./data/games.json').positive?
               JSON.parse(File.read('./data/games.json'))
             else
               []
