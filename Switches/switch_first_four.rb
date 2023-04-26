@@ -1,4 +1,5 @@
 require_relative '../Listing/list_books'
+require_relative '../Listing/list_games'
 
 def switch_first_four(choice)
   case choice
@@ -9,6 +10,6 @@ def switch_first_four(choice)
   when '3'
     puts 'you chose 3'
   when '4'
-    puts 'you chose 4'
+    list_all_games(@games)
   end
 end
