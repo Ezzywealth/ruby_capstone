@@ -32,7 +32,8 @@ class CreateAlbum < Create
     albums.push(album)
     genres.push(genre)
     labels.push(label)
-    puts 'Music album created succesfuly!'
+    puts "Music album #{album.label.title} created by #{album.author} succesfuly!"
+    puts '==========================================================='
   end
 end
 # rubocop:enable Metrics/ParameterLists

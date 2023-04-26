@@ -70,5 +70,29 @@
 
     ],
     "color": "red"
+  },
+  {
+    "title": "Money",
+    "id": 859,
+    "items": [
+
+    ],
+    "color": "blue"
+  },
+  {
+    "title": "Solo opera performance ",
+    "id": 205,
+    "items": [
+
+    ],
+    "color": "yellow"
+  },
+  {
+    "title": "safasf",
+    "id": 659,
+    "items": [
+
+    ],
+    "color": "safasf"
   }
 ]
