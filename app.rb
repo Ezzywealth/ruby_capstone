@@ -15,7 +15,7 @@ class App
     @labels = LabelStorage.fetch || []
     @genres = GenreStorage.fetch || []
     @books = BookStorage.fetch || []
-    @games = GameStorage.fetch || []
+    @games = []
     @authors = []
     @welcome = Welcome.new
     @albums = []
