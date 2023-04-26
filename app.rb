@@ -4,18 +4,25 @@ require_relative 'Switches/switch_last_four'
 require_relative 'Classes/welcome'
 require_relative 'Storage/book_storage'
 require_relative 'Storage/game_storage'
+require_relative 'Storage/label_storage'
+require_relative 'Storage/genre_storage'
 
 class App
+  attr_accessor :genres, :labels
+
   def initialize(lists_of_options)
     @lists_of_options = lists_of_options
+    @labels = LabelStorage.fetch || []
+    @genres = GenreStorage.fetch || []
     @books = BookStorage.fetch || []
-    @labels = []
     @games = []
     @welcome = Welcome.new
-    @genres = []
+    @albums = []
   end
 
   def quit_app
+    LabelStorage.save(@labels)
+    GenreStorage.save(@genres)
     BookStorage.save(@books)
     GameStorage.save(@games)
     puts 'Thank you for using this app!'
