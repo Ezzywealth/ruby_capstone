@@ -1,7 +1,9 @@
 require 'json'
 require_relative './storage'
 require_relative '../Classes/book'
-
+require_relative '../app'
+require_relative './genre_storage'
+require_relative './label_storage'
 class BookStorage < Storage
   @books = []
 
@@ -10,7 +12,7 @@ class BookStorage < Storage
   end
 
   def self.fetch
-    books = if File.exist?('./data/books.json')
+    books = if File.exist?('./data/books.json') && File.size('./data/books.json').positive?
               JSON.parse(File.read('./data/books.json'))
             else
               []
@@ -42,7 +44,10 @@ class BookStorage < Storage
   def self.deserialize(books)
     temp = []
     books.each do |book|
-      new_book = Book.new(book['id'], book['genre'], book['author'], book['source'], book['label'], book['cover_state'],
+      genre = GenreStorage.fetch.find { |genr| genr.id == book['genre'] }
+      label = LabelStorage.fetch.find { |labe| labe.id == book['label'] }
+
+      new_book = Book.new(book['id'], genre, book['author'], book['source'], label, book['cover_state'],
                           book['publisher'], book['published_date'])
       temp.push(new_book)
     end
