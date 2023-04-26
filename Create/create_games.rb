@@ -9,7 +9,6 @@ class CreateGame < Create
   def create(games, labels, genres, authors)
     print 'Enter game genre:  '
     genre_name = gets.chomp
-    print 'Enter game label title:  '
     create_class(genre_name, games, labels, genres, authors)
   end
 
@@ -20,6 +19,7 @@ class CreateGame < Create
     author_last_name = gets.chomp
     print 'Enter book source:  '
     source = gets.chomp
+    print 'Enter game label title:  '
     label_title = gets.chomp
     print 'Enter Label color:  '
     label_color = gets.chomp
