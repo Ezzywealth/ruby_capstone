@@ -6,6 +6,7 @@ require_relative 'Storage/book_storage'
 require_relative 'Storage/game_storage'
 require_relative 'Storage/label_storage'
 require_relative 'Storage/genre_storage'
+require_relative 'Storage/author_storage'
 require_relative 'Storage/album_storage'
 
 class App
@@ -16,8 +17,8 @@ class App
     @labels = LabelStorage.fetch || []
     @genres = GenreStorage.fetch || []
     @books = BookStorage.fetch || []
-    @games = []
-    @authors = []
+    @games = GameStorage.fetch || [][]
+    @authors = AuthorStorage.fetch || [][]
     @welcome = Welcome.new
     @albums = AlbumStorage.fetch || []
   end
@@ -27,6 +28,7 @@ class App
     GenreStorage.save(@genres)
     BookStorage.save(@books)
     GameStorage.save(@games)
+    AuthorStorage.save(@authors)
     AlbumStorage.save(@albums)
     puts 'Thank you for using this app!'
   end
