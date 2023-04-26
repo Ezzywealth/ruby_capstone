@@ -14,6 +14,7 @@ class App
     @lists_of_options = lists_of_options
     @labels = LabelStorage.fetch || []
     @genres = GenreStorage.fetch || []
+    @authors = []
     @books = BookStorage.fetch || []
     @games = []
     @welcome = Welcome.new

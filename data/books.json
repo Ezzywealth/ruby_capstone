@@ -1,13 +1,24 @@
 [
   {
-    "author": "etwry ertrey",
-    "id": 667,
-    "genre": 36,
-    "source": "retw",
-    "label": 325,
-    "published_date": "ertt",
+    "author": "#<Author:0x000001f7de348758>",
+    "id": 770,
+    "genre": 293,
+    "source": "wretyut",
+    "label": 425,
+    "published_date": "sddfgf",
     "archived": true,
-    "cover_state": "re",
-    "publisher": "rew"
+    "cover_state": "sdfdgh",
+    "publisher": "dsdfg"
+  },
+  {
+    "author": "#<Author:0x000001d2d98f0590>",
+    "id": 499,
+    "genre": 568,
+    "source": "ewrty",
+    "label": 711,
+    "published_date": "wert",
+    "archived": true,
+    "cover_state": "qwert",
+    "publisher": "wrey"
   }
 ]

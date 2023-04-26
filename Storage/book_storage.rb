@@ -46,6 +46,7 @@ class BookStorage < Storage
     books.each do |book|
       genre = GenreStorage.fetch.find { |genr| genr.id == book['genre'] }
       label = LabelStorage.fetch.find { |labe| labe.id == book['label'] }
+      # author = AuthorStorage.fetch.find { |auth| auth.id == book['author'] }
 
       new_book = Book.new(book['id'], genre, book['author'], book['source'], label, book['cover_state'],
                           book['publisher'], book['published_date'])
