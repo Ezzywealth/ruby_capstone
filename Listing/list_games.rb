@@ -7,5 +7,5 @@ def list_all_games(games)
       puts "#{index + 1}. Name: #{game.label.title}, Last Played Date: #{game.last_played_at}"
     end
   end
-  puts "==============================================================================="
+  puts '==============================================================================='
 end

@@ -5,11 +5,11 @@ require_relative '../Classes/genre'
 require_relative '../Classes/label'
 require_relative '../Classes/author'
 class CreateAlbum < Create
-  def create(albums, labels, genres,authors)
+  def create(albums, labels, genres, authors)
     print 'Enter music album genre: '
     genre_name = gets.chomp
     print 'Enter music author first name: '
-   author_first_name = gets.chomp
+    author_first_name = gets.chomp
     print 'Enter music author last name: '
     author_last_name = gets.chomp
     print 'Enter music album label title: '

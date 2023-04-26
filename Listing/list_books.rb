@@ -3,5 +3,5 @@ def list_all_books(books)
   books.each_with_index do |book, index|
     puts "#{index + 1}. #{book.label.title} by #{book.author.first_name} #{book.author.last_name}"
   end
-  puts "==============================================================================="
+  puts '==============================================================================='
 end
