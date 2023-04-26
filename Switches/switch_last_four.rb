@@ -11,6 +11,6 @@ def switch_last_four(choice)
   when '11'
     puts 'you chose 11'
   when '12'
-    CreateGame.new.create(@games)
+    CreateGame.new.create(@games, @labels, @genres, @authors)
   end
 end

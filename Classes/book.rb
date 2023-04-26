@@ -1,5 +1,3 @@
-# rubocop:disable Metrics/ParameterLists
-
 require_relative 'item'
 class Book < Item
   attr_accessor :cover_state, :publisher, :published_date

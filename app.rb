@@ -17,6 +17,7 @@ class App
     @authors = []
     @books = BookStorage.fetch || []
     @games = []
+    @authors = []
     @welcome = Welcome.new
     @albums = []
   end
