@@ -6,6 +6,7 @@ require_relative 'Storage/book_storage'
 require_relative 'Storage/game_storage'
 require_relative 'Storage/label_storage'
 require_relative 'Storage/genre_storage'
+require_relative 'Storage/album_storage'
 
 class App
   attr_accessor :genres, :labels
@@ -17,7 +18,7 @@ class App
     @books = BookStorage.fetch || []
     @games = []
     @welcome = Welcome.new
-    @albums = []
+    @albums = AlbumStorage.fetch || []
   end
 
   def quit_app
@@ -25,6 +26,7 @@ class App
     GenreStorage.save(@genres)
     BookStorage.save(@books)
     GameStorage.save(@games)
+    AlbumStorage.save(@albums)
     puts 'Thank you for using this app!'
   end
 
