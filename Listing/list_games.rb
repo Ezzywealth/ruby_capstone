@@ -4,7 +4,7 @@ def list_all_games(games)
     puts
   else
     games.each do |game|
-      puts "Multiplayer: #{game['multiplayer']}, Last Played Date: #{game['last_played_at']}"
+      puts "Multiplayer: #{game.multiplayer}, Last Played Date: #{game.last_played_at}"
     end
   end
 end
