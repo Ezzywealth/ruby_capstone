@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>School Library</b></h3>
+  <h3><b>Ruby Capstone</b></h3>
 
 </div>
 
@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# School Library <a name="about-project"></a>
+# Library <a name="about-project"></a>
 
 **School Library** is a project that helps a university librarian to record what books are in the library and who borrows them.
 
