@@ -31,7 +31,7 @@ class CreateGame < Create
     published_date = gets.chomp
     label = Label.new(nil, label_title, label_color)
     genre = Genre.new(nil, genre_name)
-    author = Author.new(author_first_name, author_last_name, nil)
+    author = Author.new(nil, author_first_name, author_last_name)
     game = Game.new(multi_player, last_played_at, nil, genre, author, source, label, published_date)
     games.push(game)
     labels.push(label)

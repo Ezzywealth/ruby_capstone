@@ -1,7 +1,7 @@
 require 'time'
 
 class Item
-  attr_accessor :id, :publish_date, :archived, :genre, :author, :source, :label, :generated_id
+  attr_accessor :id, :published_date, :archived, :genre, :author, :source, :label, :generated_id
 
   def initialize(id, genre, author, source, label, published_date)
     @published_date = published_date
