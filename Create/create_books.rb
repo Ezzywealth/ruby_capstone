@@ -38,6 +38,6 @@ class CreateBook < Create
     options[:labels].push(label)
     options[:genres].push(genre)
     options[:authors].push(author)
-    puts "Book created: #{book.label.title} by #{book.author}"
+    puts "Book created: #{book.label.title} by #{book.author.first_name} #{book.author.last_name}"
   end
 end

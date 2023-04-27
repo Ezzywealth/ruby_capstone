@@ -36,7 +36,7 @@ class CreateAlbum < Create
     genres.push(genre)
     labels.push(label)
     authors.push(author)
-    puts "Music album #{album.label.title} created by #{album.author} succesfuly!"
+    puts "Music album #{album.label.title} created by #{album.author.first_name} #{album.author.last_name} succesfuly!"
     puts '==========================================================='
   end
 end
