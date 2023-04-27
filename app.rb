@@ -16,10 +16,10 @@ class App
     @lists_of_options = lists_of_options
     @labels = LabelStorage.fetch || []
     @genres = GenreStorage.fetch || []
-    @authors = []
+    @authors = AuthorStorage.fetch || []
+    @authors = AuthorStorage.fetch || []
     @books = BookStorage.fetch || []
-    @games = GameStorage.fetch || [][]
-    @authors = AuthorStorage.fetch || [][]
+    @games = GameStorage.fetch || []
     @welcome = Welcome.new
     @albums = AlbumStorage.fetch || []
   end

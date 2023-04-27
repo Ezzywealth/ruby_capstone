@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>School Library</b></h3>
+  <h3><b>Ruby Capstone</b></h3>
 
 </div>
 
@@ -28,9 +28,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# School Library <a name="about-project"></a>
+# Ruby Mdeia Library <a name="about-project"></a>
 
-**School Library** is a project that helps a university librarian to record what books are in the library and who borrows them.
+**Ruby Media Library** is a project that enables its users to add different items to the library and also fetch those items from the library.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,23 +45,16 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Person Class**
-- **Student Class**
-- **Teacher Class**
-- **Nameable Class**
-- **Person class to Nameable**
-- **Base Decorator**
-- **CapitalizeDecorator and TrimmerDecorator**
-- **Classroom Class**
-- **Has Many relationship between classroom and student**
-- **Class Rental**
-- **Class Book**
-- **List all books**
-- **List all people**
-- **Create a person (teacher or student, not a plain Person).**
-- **Create a book**
-- **Create a rental**
-- **List all rentals for a given person id**
+- **Add a Book**
+- **Add a Game**
+- **Add a Music Album**
+- **List all Books**
+- **List all Games**
+- **List all Music albums**
+- **List all authors**
+- **List all Genres**
+- **List all labels**
+- **Create Class Tables for Dataabase**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,14 +77,14 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:Ezzywealth/school_library.git
+  git clone https://github.com/Ezzywealth/ruby_capstone
 ```
 
 ### Usage
 
 To run the project, navigate to the correct directory path and execute the `Ruby Filename` command on your terminal.
 
-- cd school_library
+- cd ruby_capstone
 - ruby main.rb
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -105,6 +98,18 @@ To run the project, navigate to the correct directory path and execute the `Ruby
 - GitHub: [@Ezzywealth](https://github.com/Ezzywealth)
 - Twitter: [@EzzyWealth](https://twitter.com/EzzyWealth)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ezekiel-udiomnuno)
+
+👤 **Marko Kermichiev**
+
+- GitHub: [@MarkoKermi](https://github.com/MarkoKermi)
+- Twitter: [@markokerm](https://twitter.com/markokerm)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marko-kermichiev)
+
+👤 **Juhar **
+
+- GitHub: [@juaryimami](https://github.com/juaryimami)
+- Twitter: [@juhar63557116](https://twitter.com/juhar63557116)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juhar-yimer-979316137/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

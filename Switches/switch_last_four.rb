@@ -7,9 +7,9 @@ def switch_last_four(choice)
   when '9'
     CreateBook.new.create(@books, @labels, @genres, @authors)
   when '10'
-    CreateAlbum.new.create(@albums, @labels, @genres)
+    CreateAlbum.new.create(@albums, @labels, @genres, @authors)
   when '11'
-    puts 'you chose 11'
+    puts 'Add movie feature not implemented yet'
   when '12'
     CreateGame.new.create(@games, @labels, @genres, @authors)
   end

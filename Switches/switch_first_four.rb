@@ -9,7 +9,7 @@ def switch_first_four(choice)
   when '2'
     list_all_albums(@albums)
   when '3'
-    puts 'you chose 3'
+    puts 'List movies feature not implemented yet'
   when '4'
     list_all_games(@games)
   end

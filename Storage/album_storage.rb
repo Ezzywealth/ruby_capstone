@@ -30,7 +30,7 @@ class AlbumStorage < Storage
 
   def self.serialize(album)
     {
-      author: album.author,
+      author: album.author.id,
       id: album.id,
       genre: album.genre.id,
       source: album.source,
@@ -46,8 +46,8 @@ class AlbumStorage < Storage
     albums.each do |album|
       genre = GenreStorage.fetch.find { |genr| genr.id == album['genre'] }
       label = LabelStorage.fetch.find { |labe| labe.id == album['label'] }
-
-      new_album = MusicAlbum.new(album['id'], genre, album['author'], album['source'], label, album['on_spotify'],
+      author = AuthorStorage.fetch.find { |auth| auth.id == album['author'] }
+      new_album = MusicAlbum.new(album['id'], genre, author, album['source'], label, album['on_spotify'],
                                  album['published_date'])
       temp.push(new_album)
     end

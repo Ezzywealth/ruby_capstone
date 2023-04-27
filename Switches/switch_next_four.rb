@@ -11,6 +11,6 @@ def switch_next_four(choice)
   when '7'
     list_all_authors(@authors)
   when '8'
-    puts 'you chose 8'
+    puts 'source lists feature not implemented yet'
   end
 end

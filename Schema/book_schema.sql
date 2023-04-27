@@ -1,4 +1,4 @@
-CREATE TABLE item (
+CREATE TABLE book (
     id INTEGER PRIMARY KEY,
     source_id INTEGER,
     label_id INTEGER REFERENCES label(id),
@@ -6,10 +6,6 @@ CREATE TABLE item (
     author_id INTEGER,
     published_date INTEGER,
     archived BOOLEAN,
-);
-
-CREATE TABLE book (
-    id INTEGER PRIMARY KEY REFERENCES item(id),
     publisher VARCHAR,
     cover_state VARCHAR,
 );
