@@ -1,0 +1,44 @@
+[
+  {
+    "multiplayer": "weryt",
+    "last_played_at": "rweyt",
+    "id": 422,
+    "genre": {
+      "id": 541,
+      "name": "retyt"
+    },
+    "author": {
+      "id": 638,
+      "first_name": "rweyt",
+      "last_name": "weryt"
+    },
+    "source": "rety",
+    "label": {
+      "id": 210,
+      "title": "reytr",
+      "color": "rety"
+    },
+    "published_date": "rety"
+  },
+  {
+    "multiplayer": "qewr",
+    "last_played_at": "eqwr",
+    "id": 255,
+    "genre": {
+      "id": 7,
+      "name": "ewrt"
+    },
+    "author": {
+      "id": 924,
+      "first_name": "wer",
+      "last_name": "ewrt"
+    },
+    "source": "wer",
+    "label": {
+      "id": 562,
+      "title": "ewr",
+      "color": "wer"
+    },
+    "published_date": "ewrt"
+  }
+]

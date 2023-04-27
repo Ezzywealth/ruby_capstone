@@ -1,0 +1,35 @@
+[
+  {
+    "author": "wery",
+    "id": 395,
+    "genre": 820,
+    "source": "wer",
+    "label": 699,
+    "published_date": "wer",
+    "archived": true,
+    "cover_state": "wer",
+    "publisher": "wer"
+  },
+  {
+    "author": "wery",
+    "id": 580,
+    "genre": 961,
+    "source": "wreyt",
+    "label": 712,
+    "published_date": "rwetyr",
+    "archived": true,
+    "cover_state": "rety",
+    "publisher": "wrety"
+  },
+  {
+    "author": "wertyt",
+    "id": 328,
+    "genre": 464,
+    "source": "erwtyt",
+    "label": 843,
+    "published_date": "erwtyt",
+    "archived": true,
+    "cover_state": "retyt",
+    "publisher": "retwyt"
+  }
+]
