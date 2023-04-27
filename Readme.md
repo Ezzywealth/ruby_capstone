@@ -34,10 +34,14 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
+## 🚀 VIDEO WALKTHROUGH <a name="live-demo"></a>
+
+- [https://drive.google.com/file/d/1n9QAXA6e3o8ehDSlM0YcZWmCP4-4gJv2/view?usp=sharing) 
+
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-<summary>Front-End</summary>
+<summary>Back-End</summary>
   <ul>
     <li><a href="https://ruby-doc.org/3.2.1/">Ruby</a></li>
   </ul>
